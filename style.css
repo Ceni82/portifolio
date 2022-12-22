@@ -1,0 +1,469 @@
+*{
+    font-family: Merriweather Sans, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bd-foto: #00FF00;
+
+  }
+
+body {
+    background: var(--body-bg-color);
+    margin: 0;
+}
+
+/* ESTRUTURA */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+
+.side{
+    flex: 25%;
+    padding: 40px;
+    /*border: solid red 1px;*/
+
+
+}
+  
+.main {
+    flex: 75%;
+    padding: 30px ;
+    /*border: solid rgb(0, 255, 34) 1px;*/
+}
+  
+  
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--body-bg-color);
+    color:var(--text-color);
+}
+
+.footer a {
+    
+    text-decoration: none;
+    color:var(--text-color);
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .row {   
+      flex-direction: column;
+      
+
+    }
+
+  }
+
+
+ 
+/** PROFILE **/
+
+.profile {
+    border-radius: 5%;
+    background: var(--bg-cards);
+    width: 100%;
+    box-shadow: #000000 3px 3px;
+
+}
+
+.internoProf {
+    color: var(--text-color);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+
+}
+
+.profile img {
+    width:55%;
+    border-radius: 50%;
+    border: var(--bd-foto) 2px solid; 
+    
+
+} 
+.profile h1 { 
+    font-size: 23px;
+    text-shadow: #000000 2px 2px;
+  
+
+    
+}
+
+/** CONTATOS**/
+.contatos {
+    border-radius: 15px;
+    padding: 5%;
+    background: var(--bg-cards);
+    width: 100%;
+    margin-top: 30px;
+    color:var(--text-color);
+    font-size: 13px;
+    box-shadow: #000000 3px 3px;
+    
+}
+
+.menuContato{
+    padding-top: 1em;
+    
+
+}
+
+table{
+    width: 100%;
+    padding: 0 19%;
+    /*border: solid red 1px;*/
+  
+    
+}
+
+ td, th, a,  a:active {
+    
+    /*border: solid red 1px;*/
+     text-decoration: none;
+     color:#ddd;
+     
+    
+  }
+
+  a:hover {
+    color:var(--body-bg-color);
+  }
+
+  /*.blink_me {
+    animation: blinker 5s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }*/
+
+
+/** TECNOLOGIAS **/
+.tecnologias {
+    border-radius: 5%;
+    padding: 15px;
+    background: var(--bg-cards);
+    width: 100%;
+    margin-top: 30px;
+    color:var(--text-color);
+    font-size: 13px;
+    box-shadow: #000000 3px 3px;
+    
+}
+
+.tecnologias h2 {
+    padding:0.4rem ;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 1rem;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+   
+  }
+
+.botoes {
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+/** NEWS **/
+.news {
+    border-radius: 5%;
+    padding: 2rem;
+    background: var(--bg-cards);
+    width: 100%;
+    height: 22rem;
+    margin-top: 25px;
+    color:var(--text-color);
+    font-size: 13px;
+    box-shadow: #000000 3px 3px;
+    
+}
+
+.titleNews {
+    font-weight: bolder;
+    font-size: larger;
+    text-shadow: #1b1b1b 2px 2px;
+    
+}
+
+
+.quadro {
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#botoesNews {
+        padding:1rem;
+        display: flex;
+        justify-content: flex-end;
+      
+
+}
+#play {
+    background:url(/iconTecs/play.svg) no-repeat;
+    cursor:pointer;
+    border: none;
+    padding: 0.7rem;
+    
+}
+#stop {
+    background:url(/iconTecs/stop.svg) no-repeat;
+    cursor:pointer;
+    border: none;
+    padding: 0.7rem;
+    
+}
+
+
+/** EDUCAÇÃO**/
+.educ {
+    border-radius: 5%;
+    padding: 15px;
+    background: var(--bg-cards);
+    width: 100%;
+    height: 352px;
+    margin-top: 30px;
+    color:var(--text-color);
+    font-size: 13px;
+    box-shadow: #000000 3px 3px;
+}
+
+/** PROJETOS */
+
+/** MEUS PROJETOS**/
+.meusProjetos{
+    color: var(--text-color);
+    background: var(--bg-cards);
+    width: 100%;
+    height: 7rem;
+    border-radius: 15px;
+   
+    box-shadow: #000000 3px 3px;
+    
+}
+
+.meusProjetos h2{
+     
+    font-family: Merriweather Sans, sans-serif;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+  }
+  
+.meusProjetos h2:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }
+  
+.meusProjetos h2 a{
+    
+    text-decoration: none;
+  }
+  
+ .meusProjetos span{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+
+  
+
+.projConteudo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    text-indent: 2em;
+    
+}
+
+.projConteudo h2 {
+    font-size: large;
+
+}
+
+.projConteudo p {
+    padding-right: 2rem;
+
+}
+
+
+/*****CAIXAS PROJETOS******/
+.caixa {
+    color: var(--text-color);
+    background: var(--bg-cards);
+    width: 30rem;
+    height:45rem;
+    border-radius: 15px;
+    margin: 2%;
+    box-shadow: #000000 3px 3px;
+    padding: 2rem;
+    
+    
+}
+.grid-container {
+    display:flex;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding:0 3rem 0;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-shadow: #1b1b1b  4px 3px;
+    background: var(--body-bg-color);
+  }
+
+.imgBox iframe{
+    width: 25rem;
+    height: 15rem;
+    border:2px dashed black;
+    border-radius: 15px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    padding: 3%;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: #1b1b1b  3px 3px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: var(--bg-cards);
+    
+
+
+}
+.skills i{
+    font-size:large;
+    padding-left: 0.6rem;
+    
+}
+
+.caixa p {
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    padding: 3%;
+    width: 100%;
+    height: 15rem;
+    flex-direction: column;
+    box-shadow: #1b1b1b  3px 3px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: var(--bg-cards);
+}
+
+.caixa h1 {
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: #1b1b1b  3px 3px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: var(--bg-cards);
+    text-shadow: black  2px 1px;
+}
+
+.textoInterno h2{
+    font-size: medium;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.techsIcons ul {
+    list-style-type: circle;
+    padding-left: 25%;
+    padding-top: 9%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.click {
+    display: flex;
+    padding-top:45%;
+    padding-left: 15%;
+    
+    
+}
+
+.click button:hover {
+    color:var(--text-color);
+    border: var(--text-color);
+}
+/***** FIM CAIXAS PROJETOS******/
+
+
+.resPost{
+    color: var(--text-color);
+    background: var(--bg-cards);
+    width: 100%;
+    height: 86px;
+    border-radius: 15px;
+    
+    margin-top: 40px;
+    box-shadow: #000000 3px 3px;
+} 
+.error{
+    color: var(--text-color);
+    background: var(--bg-cards);
+    width: 100%;
+    height: 201px;;
+    border-radius: 15px;
+  
+    margin-top: 40px;
+    box-shadow: #000000 3px 3px;
+}
+

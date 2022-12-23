@@ -68,7 +68,11 @@ body {
   }
 
 
- */
+/******************/
+/***** SIDE ******/
+/******************/
+
+
 /** PROFILE **/
 
 .profile {
@@ -260,28 +264,33 @@ button {
     box-shadow: #000000 3px 3px;
 }
 
+
+/*********************/
+/*****  MAIN    *****/
+/********************/
+
+
 /** PROJETOS */
 
 /** MEUS PROJETOS**/
+
 .meusProjetos{
     color: var(--text-color);
     background: var(--bg-cards);
-    width: 100%;
-    height: 7rem;
+    width: auto;
+    padding: 0.5 rem;
     border-radius: 15px;
-   
     box-shadow: #000000 3px 3px;
     
 }
 
 .meusProjetos h2{
-     
     font-family: Merriweather Sans, sans-serif;
     font-size: 20px;
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    width: 30em;
+    width: auto;
     animation: type 4s steps(60, end); 
   }
   
@@ -313,7 +322,6 @@ button {
   }
   
 
-  
 
 .projConteudo {
     display: flex;
@@ -372,7 +380,7 @@ button {
     justify-content: start;
     align-items:flex-start;
     padding: 3%;
-    width: 100%;
+    width: auto;
     flex-direction: row;
     box-shadow: #1b1b1b  3px 3px;
     border-radius: 15px;
@@ -393,7 +401,7 @@ button {
     justify-content: start;
     align-items:flex-start;
     padding: 3%;
-    width: 100%;
+    width: auto;
     height: 15rem;
     flex-direction: column;
     box-shadow: #1b1b1b  3px 3px;
@@ -409,7 +417,7 @@ button {
     display: flex;
     justify-content: start;
     align-items:flex-start;
-    width: 100%;
+    width: auto;
     flex-direction: column;
     box-shadow: #1b1b1b  3px 3px;
     border-radius: 15px;
@@ -449,8 +457,8 @@ button {
 .resPost{
     color: var(--text-color);
     background: var(--bg-cards);
-    width: 100%;
-    height: 86px;
+    width: auto;
+    
     border-radius: 15px;
     
     margin-top: 40px;
@@ -459,8 +467,8 @@ button {
 .error{
     color: var(--text-color);
     background: var(--bg-cards);
-    width: 100%;
-    height: 201px;;
+    width: auto;
+
     border-radius: 15px;
   
     margin-top: 40px;
@@ -469,53 +477,27 @@ button {
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) { 
-    .btn-custon {
-        margin: 10px 15px;
-    }
-    #home {
-        margin-top: 50px;
-        text-align: center;
-    }
-    .icons {
-        width: 16%;
-        justify-content: space-around;
-    }
-
-    .trabalhos {
-        padding-top: 10%;
-    }
-    .no-scroll{
-        overflow-x: hidden;
-    }
+  
     
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .btn-custon {
-        margin: 10px 15px;
-    }
-
+  
 }
-
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    h1 {
-        font-size:4em;
-    }
+  
  }
 
 /*/ Dispositivos large (desktops com 992px ou mais)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    h1 {
-        font-size:5em;
-    }
+   
  }
 
 /*/ Dispositivos extra large (desktops grandes com 1200px ou mais)*/
 @media (min-width: 1200px) { 
-    h1 {
-        font-size:6em;
-    }
+   
  }
+

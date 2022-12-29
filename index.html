@@ -93,58 +93,29 @@ rel="stylesheet">
       </div>
     </div>
     <div class="news">
-
-        <div class="titleNews">NEWS</div>
+        <div class="formulario">
+            <div class="titleForm"><i class="far fa-envelope fa-3x"></i><h2>SUA MENSAGEM AQUI!</h2>
+         </div>
+        
+        
+            <form
+                    action="https://formspree.io/f/xnqyaygd"
+                    method="POST"
+                    >
+                    <label for="name">NOME:</label>
+                        <input style="display:block;" type="nome" id="name" name="nome" required>
+                    <label for="email">EMAIL:</label>
+                        <input style="display:block;" type="email" id="email" name="email" required>
+                    <label for="msg">MENSAGEM:</label>
+                        <textarea style="display:block;"  id="msg" name="msg" required></textarea>
+                    
+                    <!-- your other form fields go here -->
+                    <button type="submit">ENVIAR</button>
+            </form>
             
-                <marquee direction="up" scrolldelay="310" id="marID">
-                11/22 - <p><h1 style="color:rgb(4, 255, 25);"> ONLINE >>></h1> ou seria..."Hello World!" </p>
-                <p>Enfim esse é meu portfólio, aqui tem alguns projetos e criei e de aulas, por exemplo, 
-                o próprio portfólio e foi um desafio da rocket seat e eu mudei e transformei nisso aqui, 
-                la vai minha primeira versão;</p>
-                <br>
-                <hr>
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                11/22 - Lorem ipsum dolor sit, 
-                amet consectetur adipisicing elit. 
-                Ipsa iste veritatis fuga, praesentium tenetur,<br>
-                <hr>
-                <br>
-                </marquee>
-                <div id="botoesNews">
-                    <div>
-                        <input id="play" type="submit"
-                         onclick="marID.start()"
-                         value="">
-                </div>          
-                <div> 
-                    <input id="stop" type="submit"
-                        onclick="marID.stop()"
-                        value=""></div>
-                   
-                </div>
-
-    
+        </div>
     </div>
+    
     <!--<div class="educ">
       
     </div> -->
@@ -207,30 +178,59 @@ rel="stylesheet">
     <div><!--POSTS-->
         <div id="resPost">
             <div class="box1">
-                    <div class="formulario">
-                        <div class="titleForm"><i class="far fa-envelope fa-3x"></i><h2>SUA MENSAGEM AQUI!</h2>
-                        </div>
+                
+
+                    <div class="titleNews">NEWS</div>
                         
-                        <form>
-                        <ul class="flex-outer">
-                            <li>
-                            <label for="first-name">Nome</label>
-                            <input type="text" id="first-name" placeholder="Digite seu nome">
-                            </li>
-                            <li>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Digite seu email">
-                            </li>
-                            <li>
-                            <label for="message">Mensagem</label>
-                            <textarea rows="6" id="message" placeholder="Digite aqui sua mensagem"></textarea>
-                            </li>
-                            <li>
-                            <button type="submit">Enviar</button>
-                            </li>
-                        </ul>
-                        </form>
-                    </div>
+                            <marquee direction="up" scrolldelay="310" id="marID">
+                            11/22 - <p><h1 style="color:rgb(4, 255, 25);"> ONLINE >>></h1> ou seria..."Hello World!" </p>
+                            <p>Enfim esse é meu portfólio, aqui tem alguns projetos e criei e de aulas, por exemplo, 
+                            o próprio portfólio e foi um desafio da rocket seat e eu mudei e transformei nisso aqui, 
+                            la vai minha primeira versão;</p>
+                            <br>
+                            <hr>
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            11/22 - Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Ipsa iste veritatis fuga, praesentium tenetur,<br>
+                            <hr>
+                            <br>
+                            </marquee>
+                            <div id="botoesNews">
+                                <div>
+                                    <input id="play" type="submit"
+                                     onclick="marID.start()"
+                                     value="">
+                            </div>          
+                            <div> 
+                                <input id="stop" type="submit"
+                                    onclick="marID.stop()"
+                                    value=""></div>
+                               
+                            </div>
+            
+                
+                
             </div>
             <div class="box2"><img src="/imgs/placa.gif" style="align-items: center;" width="30%" height="50%"></div>
         </div>
